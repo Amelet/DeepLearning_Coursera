@@ -1,0 +1,6 @@
+# Neural-Networks-and-Deep-Learning
+
+## Exercise 1: Logistic regression as a Neural Network
+...
+
+## Exercise 2: ...
