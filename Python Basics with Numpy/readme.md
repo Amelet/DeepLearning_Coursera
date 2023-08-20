@@ -4,9 +4,9 @@
 The "math" library is designed for scalar mathematical operations, "numpy" is designed for vectorized operations on matrices and vectors, making it more suitable for deep learning tasks.
 
 ## Sigmoid gradient
-\[
+$
 \sigma'(z) = \sigma(z) \times (1 - \sigma(z))
-\]
+$
 The gradient of the sigmoid function at any point `z` is given by the value of the sigmoid function at that point multiplied by the difference between 1 and the value of the sigmoid function at that point. This result is useful when implementing neural networks, especially during the backpropagation step.
 
 ## Unrolling arrays using np.reshape()
