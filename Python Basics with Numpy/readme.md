@@ -17,6 +17,9 @@ Normalizing data often leads to a faster gradient descent convergence.
 
 ## Softmax function and broadcasting in python
 Softmax function:
+```math
+\sigma(z)_j = \frac{e^{z_j}}{\sum_{k=1}^{K} e^{z_k}}
+```
 
 *Outputs a Probability Distribution:* Each element of the output vector is in the range (0, 1), and the sum of the elements is 1.
 
