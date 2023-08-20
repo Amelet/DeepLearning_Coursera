@@ -4,13 +4,13 @@
 The "math" library is designed for scalar mathematical operations, "numpy" is designed for vectorized operations on matrices and vectors, making it more suitable for deep learning tasks.
 
 ## Sigmoid gradient
-$
+```math
 \sigma'(z) = \sigma(z) \times (1 - \sigma(z))
-$
+```
 The gradient of the sigmoid function at any point `z` is given by the value of the sigmoid function at that point multiplied by the difference between 1 and the value of the sigmoid function at that point. This result is useful when implementing neural networks, especially during the backpropagation step.
 
 ## Unrolling arrays using np.reshape()
-An image is represented by a 3D array of shape $(length, height, depth = 3)$. To become in input to an algorithm, such a 3D matrix can be unrolled into a 1D vector of shape $(length*height*3, 1)$. In other words, you "unroll" the matrix.
+An image is represented by a 3D array of shape $(length, height, depth = 3)$. To become in input to an algorithm, such a 3D matrix can be unrolled into a 1D vector of shape $(length * height * 3, 1)$. In other words, you "unroll" the matrix.
 
 ## Normalizing data
 Normalizing data often leads to a faster gradient descent convergence. 
@@ -36,6 +36,9 @@ mul = np.multiply(x1,x2)
 ## L1 and L2 loss functions
 ### L1
 The L1 loss function, also known as the "Least Absolute Deviations" (LAD) or "Mean Absolute Error" (MAE), calculates the sum of the absolute differences between the predicted values and the actual values. 
+```math
+L_1 = \sum_{i=1}^{n} |y_i - \hat{y}_i|
+```
 
 *Advantages:* It's more robust to outliers compared to the L2 loss because it doesn't square the differences.
 
@@ -43,6 +46,10 @@ The L1 loss function, also known as the "Least Absolute Deviations" (LAD) or "Me
 
 ### L2
 The L2 loss function, also known as "Least Squares Error" (LSE) or "Mean Squared Error" (MSE), calculates the sum of the squared differences between the predicted and actual values.
+```math
+L_2 = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+
+```
 
 *Advantages:* It's differentiable, making it more suitable for gradient-based optimization methods. The squared term also penalizes larger errors more than smaller ones, leading to a more stable and consistent learning process when the data has fewer outliers.
 
