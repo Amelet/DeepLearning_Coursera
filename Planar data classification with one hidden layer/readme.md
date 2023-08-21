@@ -17,10 +17,10 @@ Define three variables:
 - Use: `np.zeros((a,b))` to initialize a matrix of shape (a,b) with zeros.
 
 ```python
-W1 -- weight matrix of shape (n_h, n_x)
-b1 -- bias vector of shape (n_h, 1)
-W2 -- weight matrix of shape (n_y, n_h)
-b2 -- bias vector of shape (n_y, 1)
+# W1 -- weight matrix of shape (n_h, n_x)
+# b1 -- bias vector of shape (n_h, 1)
+# W2 -- weight matrix of shape (n_y, n_h)
+# b2 -- bias vector of shape (n_y, 1)
 
 W1 = np.random.randn(n_h, n_x) * 0.01
 b1 = np.zeros((n_h, 1))
