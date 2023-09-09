@@ -1,6 +1,7 @@
 
 The definition of a derivative (or gradient):
-$$ \frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta + \varepsilon) - J(\theta - \varepsilon)}{2 \varepsilon} \tag{1}$$
+
+$\frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta + \varepsilon) - J(\theta - \varepsilon)}{2 \varepsilon} \tag{1}$
 
 ## Implement gradient checking.
 - First compute "gradapprox" using the formula above and a small value of $\varepsilon$. Here are the Steps to follow:
